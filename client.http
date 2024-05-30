@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:8000/api/v1
+
+### Listar todas as tasks
+GET {{baseUrl}}/tasks
+
+### Obter detalhes de uma task específica
+GET {{baseUrl}}/tasks/id
+
+### Criar uma nova task
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+    "name": "Fazer Pão"
+}
+
+### Atualizar uma task existente
+PUT {{baseUrl}}/tasks/3
+Content-Type: application/json
+
+{
+    "name": "Fazer Café"
+}
+
+### Excluir uma task existente
+DELETE {{baseUrl}}/tasks/1
