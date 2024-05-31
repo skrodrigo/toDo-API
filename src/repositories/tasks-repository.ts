@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from 'uuid'
-
 import { Task } from '../models/task-model';
 import { PrismaClient } from '@prisma/client';
 
